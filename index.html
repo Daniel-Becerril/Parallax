@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo parallax</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <section class="container-fluid text-center vh-100 vw-100 position-relative overflow-hidden">
+            <ul class="nav nav-pills position-absolute top-0 start-50 translate-middle-x mt-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Item</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Disabled</a>
+                </li>
+              </ul>
+            <h1 class="position-absolute translate-middle welcome__title">¡Bienvenido a Aprendiendo parallax!</h1>
+            <p class="position-absolute  translate-middle welcome__subtitle">Esta es mi primera web desarrollada haciendo uso del increible efecto visual parallax, ¿no sabes que es?, no te procupes, solo deslizate con el scroll y dejate llevar.</p>
+            <!--vectores blob-->
+            <img src="/assets/blob-haikei.svg" alt="blob" class="position-absolute top-0 start-0 translate-middle welcome__blob1 overflow-hidden">
+            <img src="/assets/blob-haikei.svg" alt="blob" class="position-absolute top-0 start-100 translate-middle welcome__blob2">
+            <img src="/assets/blob-haikei.svg" alt="blob" class="position-absolute top-100 start-0 translate-middle welcome__blob3">
+            <img src="/assets/blob-haikei.svg" alt="blob" class="position-absolute top-100 start-100 translate-middle welcome__blob4 overflow-hidden">
+        </section>
+    </header>
+    <!--Seccion efecto en una foto-->
+    <section class="container-fluid vw-100 vh-100 background__gradient text-center d-flex flex-column align-items-center">
+        <h2 class="my-5">Efecto en una imagen</h2>
+        <div class="w-75 h-75 overflow-hidden">
+            <img src="/assets/p_sky.jpg" alt="Sky" class="img-fluid" id="p1">
+        </div>
+    </section>
+    <!--Seccion efecto de fondo-->
+    <section id="p2" class="container-fluid vw-100 pb-5 background__gradient-rvs d-flex flex-column align-items-center">
+        <h2 class="my-5 text-white">Efecto de fondo</h2>
+        <div class="container container__box text-center p-5">
+            <h3>Fijate en el fondo</h3>
+            <p>Este efecto consiste en aplicar una serie de parametros al fondo de la sección, en este caso la imagen, para luego moverlo a una velocidad distinta al hacer scroll.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem aliquid vero tempore incidunt impedit eius rerum perspiciatis magnam veniam? Soluta obcaecati alias architecto nemo numquam reiciendis similique temporibus debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam minima omnis esse facilis quo reprehenderit, itaque quis expedita iure asperiores nesciunt explicabo dolor nihil? Eligendi autem corrupti quia reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, eius odio incidunt id quo dolorum error, reprehenderit inventore sequi culpa modi ipsum laborum veniam dicta ipsam explicabo accusantium, obcaecati nihil Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, facere laudantium! Temporibus tenetur rem, fuga quae minus, qui aut sapiente quaerat adipisci culpa quidem sequi voluptatem explicabo, delectus nam recusandae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit quos omnis, amet temporibus ullam magni eveniet a. Asperiores obcaecati accusamus velit ex. Voluptatem fugiat unde est libero debitis excepturi.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aliquid repellendus minus eligendi quaerat, doloremque ratione qui eos, veniam eveniet excepturi sed porro architecto fugit tempora similique cumque adipisci debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, blanditiis quasi veritatis temporibus modi sit hic exercitationem labore doloremque neque, nemo perferendis, assumenda aliquam illum. Distinctio doloremque porro debitis. Assumenda.
+            </p>
+        </div>
+    </section>
+    <!--Seccion-->
+    <section class="container-fluid vw-100 vh-100 background__gradient">
+
+    </section>
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fx.js"></script>
+</body>
+</html>

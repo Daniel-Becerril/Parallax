@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #BB004B;
+    --backgrund-color: #4475d7;
+}
+/*
+body{
+    background-color: var(--backgrund-color);
+}
+*/
+.welcome__title{
+    top: 40%;
+    left: 50%;
+}
+.welcome__subtitle{
+    top: 48%;
+    left: 50%;
+}
+/*Generica*/
+.background__gradient{
+    background: linear-gradient(#FFFF, var(--backgrund-color));
+}
+.background__gradient-rvs{
+    /*background: linear-gradient(var(--backgrund-color), rgba(187, 0, 75, 0.2));*/
+    background-image: url(/assets/p_river.jpg);
+    opacity: 0.9;
+    background-attachment: fixed;
+}
+.section_img{
+    width: 120%;
+    height: 120%;
+}
+.container__box{
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #888787,
+    -5px -5px 10px #535353;
+}
